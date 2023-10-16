@@ -61,6 +61,11 @@ function createWindow() {
 
 app.on("ready", () => {
   app.setActivationPolicy("regular"); // This is needed to avoid the warning
+
+  // Implement NSApplicationDelegate.applicationSupportsSecureRestorableState
+  app.setAboutPanelOptions({
+    applicationSupportsSecureRestorableState: true,
+  });
   createWindow();
 });
 

@@ -2,6 +2,8 @@
   "name": "websnap",
   "version": "0.1.0",
   "private": true,
+  "main": "electron.js",
+  "proxy": "localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,8 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build && electron-builder",
     "electron": "electron electron.js",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,6 +41,28 @@
     ]
   },
   "devDependencies": {
-    "electron": "^26.3.0"
+    "electron": "^26.3.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.example.yourapp",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "public/**/*",
+      "electron.js",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": true
+    }
   }
 }
