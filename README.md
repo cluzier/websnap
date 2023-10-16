@@ -1,70 +1,86 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WebSnap
 
-## Available Scripts
+All-in-one React/Electron GUI application designed to revolutionize the way you interact with API endpoints. Much like Postman, WebSnap is your go-to tool for exploring and understanding the intricate details of your APIs in a sleek and intuitive interface.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Interface:**
+  - Clean and intuitive design for easy navigation.
+  - Customizable color themes, including light and dark modes. (coming soon...)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Request Building:**
+  - Create and send HTTP requests effortlessly.
+  - Supports various request types: GET, POST, PUT, DELETE, etc.
+  - Ability to add headers, parameters, and authentication details. (coming soon...)
 
-### `npm test`
+- **API Exploration:**
+  - Explore and understand API endpoints.
+  - Interactive visualization of JSON and XML responses.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Request History:** (coming soon...)
+  - Keep track of past requests for quick reference.
+  - Easily reuse and modify previous requests.
 
-### `npm run build`
+- **Testing and Automation:** (coming soon...)
+  - Write and run tests for your API endpoints.
+  - Automate API testing with scripts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Authentication:** (coming soon...)
+  - Support for various authentication methods (API key, OAuth, etc.).
+  - Simplified handling of authentication details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Cross-Platform Compatibility:**
+  - Available on Windows, macOS, and Linux.
+  - Consistent experience across different operating systems.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  git clone https://github.com/cluzier/websnap.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Go to the project directory
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  cd websnap
+```
 
-## Learn More
+Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the server
 
-### Code Splitting
+```bash
+  npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Start the Electron GUI
 
-### Analyzing the Bundle Size
+```bash
+  npm run electron
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Client:** React, Electron
 
-### Advanced Configuration
+**Server:** Node, Express
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[MIT](https://choosealicense.com/licenses/mit/)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+- [@cluzier](https://www.github.com/cluzier)
