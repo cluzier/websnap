@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "main": "electron.js",
-  "proxy": "localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -19,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && electron-builder",
+    "build": "react-scripts build",
     "electron": "electron electron.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
