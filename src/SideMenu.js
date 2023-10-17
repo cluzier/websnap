@@ -28,11 +28,6 @@ const SideMenu = ({
             Clear History
           </Button>
         </Menu.Item> */}
-        {history.map((query, index) => (
-          <Menu.Item key={`query_${index}`} onClick={() => onSendRequest(query)}>
-            {query}
-          </Menu.Item>
-        ))}
       </Menu>
     </div>
   );
